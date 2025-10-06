@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<robot name="CR-Hand_URDF" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<xacro:property name="body_color" value="Gazebo/Silver" />
+
+<gazebo reference="base_link">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+  <gravity>true</gravity>
+</gazebo>
+
+<gazebo reference="link2_2_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link2_1_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link3_2_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link3_1_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link4_2_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link4_1_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link5_2_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link5_1_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link1_3_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<gazebo reference="link1_1_1">
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
+  <self_collide>true</self_collide>
+</gazebo>
+
+<ros2_control name="GazeboSimSystem" type="system">
+<hardware>
+   <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+</hardware>
+<joint name="Revolute 19">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 20">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 21">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 22">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 23">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 24">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 25">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 26">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 27">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+<joint name="Revolute 28">
+   <state_interface name="position"/>
+   <state_interface name="velocity"/>
+</joint>
+
+</ros2_control>
+<gazebo>
+<plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+   <parameters>$(find CR-Hand_URDF)/config/ros2_controller.yaml</parameters>
+</plugin>
+<plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
+   <render_engine>ogre2</render_engine>
+</plugin>
+<plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+</gazebo>
+</robot>

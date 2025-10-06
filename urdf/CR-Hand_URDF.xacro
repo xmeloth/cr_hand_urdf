@@ -1,0 +1,308 @@
+<?xml version="1.0" ?>
+<robot name="CR-Hand_URDF" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find CR-Hand_URDF)/urdf/materials.xacro" />
+<xacro:include filename="$(find CR-Hand_URDF)/urdf/sensors.xacro" />
+<xacro:include filename="$(find CR-Hand_URDF)/urdf/CR-Hand_URDF.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.01258814690707233 -0.0014435974218675726 0.0503918095551357" rpy="0 0 0"/>
+    <mass value="0.25446350917170585"/>
+    <inertia ixx="0.000334" iyy="0.000291" izz="0.000157" ixy="2e-06" iyz="-1e-06" ixz="-4.3e-05"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_2_1">
+  <inertial>
+    <origin xyz="0.005969301232532965 -1.1637668159009129e-08 0.014039124761224958" rpy="0 0 0"/>
+    <mass value="0.0056132869026133975"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0225 -0.0255 -0.143" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link2_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0225 -0.0255 -0.143" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link2_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link2_1_1">
+  <inertial>
+    <origin xyz="0.0018671173269007371 -6.394654877072206e-05 0.019160256360538586" rpy="0 0 0"/>
+    <mass value="0.007469103826058473"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0225 -0.0255 -0.103" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0225 -0.0255 -0.103" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link2_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_2_1">
+  <inertial>
+    <origin xyz="0.005969306165589154 -0.0004907419668455119 0.014031072734458222" rpy="0 0 0"/>
+    <mass value="0.005613293082823825"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02255 -0.005028 -0.148439" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link3_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02255 -0.005028 -0.148439" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link3_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link3_1_1">
+  <inertial>
+    <origin xyz="0.0018671173269007267 -0.0007321109517335212 0.019146106955324732" rpy="0 0 0"/>
+    <mass value="0.007469103826058467"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.02255 -0.006423 -0.108464" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link3_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.02255 -0.006423 -0.108464" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link3_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_2_1">
+  <inertial>
+    <origin xyz="0.005969308941921617 -0.0009796579832659254 0.014004610375649595" rpy="0 0 0"/>
+    <mass value="0.005613296762362794"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0225 0.015441 -0.144258" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link4_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0225 0.015441 -0.144258" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link4_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link4_1_1">
+  <inertial>
+    <origin xyz="0.0018671173269007371 -0.0013998528857119361 0.019109183243744582" rpy="0 0 0"/>
+    <mass value="0.007469103826058476"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0225 0.012651 -0.104355" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link4_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0225 0.012651 -0.104355" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link4_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_2_1">
+  <inertial>
+    <origin xyz="0.00596931588920031 -0.0014679280351763552 0.013962179469490604" rpy="0 0 0"/>
+    <mass value="0.005613304223205438"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0225 0.035901 -0.139955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link5_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0225 0.035901 -0.139955" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link5_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link5_1_1">
+  <inertial>
+    <origin xyz="0.0018671173269007371 -0.002066831960492427 0.019048663011362793" rpy="0 0 0"/>
+    <mass value="0.007469103826058467"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0225 0.031719 -0.100174" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link5_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0225 0.031719 -0.100174" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link5_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_3_1">
+  <inertial>
+    <origin xyz="-1.5645635322841106e-05 0.043404926936212444 0.027519908601354955" rpy="0 0 0"/>
+    <mass value="0.020651833448694434"/>
+    <inertia ixx="1.4e-05" iyy="7e-06" izz="9e-06" ixy="0.0" iyz="-6e-06" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0225 -0.0545 -0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link1_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0225 -0.0545 -0.025" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link1_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link1_1_1">
+  <inertial>
+    <origin xyz="0.00034372338269800587 0.015133533891270378 0.003871141534991799" rpy="0 0 0"/>
+    <mass value="0.01038907550298277"/>
+    <inertia ixx="1e-06" iyy="1e-06" izz="1e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0225 -0.0255 -0.028" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0225 -0.0255 -0.028" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link1_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Revolute 19" type="continuous">
+  <origin xyz="0.0 0.0 0.04" rpy="0 0 0"/>
+  <parent link="link2_1_1"/>
+  <child link="link2_2_1"/>
+  <axis xyz="-0.0 1.0 -0.0"/>
+</joint>
+
+<joint name="Revolute 20" type="continuous">
+  <origin xyz="0.0225 0.0255 0.103" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link2_1_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Revolute 21" type="continuous">
+  <origin xyz="0.0 -0.001395 0.039975" rpy="0 0 0"/>
+  <parent link="link3_1_1"/>
+  <child link="link3_2_1"/>
+  <axis xyz="-0.0 0.999391 0.034899"/>
+</joint>
+
+<joint name="Revolute 22" type="continuous">
+  <origin xyz="0.02255 0.006423 0.108464" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link3_1_1"/>
+  <axis xyz="-0.0 0.999391 0.034899"/>
+</joint>
+
+<joint name="Revolute 23" type="continuous">
+  <origin xyz="0.0 -0.00279 0.039903" rpy="0 0 0"/>
+  <parent link="link4_1_1"/>
+  <child link="link4_2_1"/>
+  <axis xyz="-0.0 0.997564 0.069756"/>
+</joint>
+
+<joint name="Revolute 24" type="continuous">
+  <origin xyz="0.0225 -0.012651 0.104355" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link4_1_1"/>
+  <axis xyz="-0.0 0.997564 0.069756"/>
+</joint>
+
+<joint name="Revolute 25" type="continuous">
+  <origin xyz="0.0 -0.004182 0.039781" rpy="0 0 0"/>
+  <parent link="link5_1_1"/>
+  <child link="link5_2_1"/>
+  <axis xyz="-0.0 0.994522 0.104528"/>
+</joint>
+
+<joint name="Revolute 26" type="continuous">
+  <origin xyz="0.0225 -0.031719 0.100174" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link5_1_1"/>
+  <axis xyz="-0.0 0.994522 0.104528"/>
+</joint>
+
+<joint name="Revolute 27" type="continuous">
+  <origin xyz="0.0 0.029 -0.003" rpy="0 0 0"/>
+  <parent link="link1_1_1"/>
+  <child link="link1_3_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Revolute 28" type="continuous">
+  <origin xyz="0.0225 0.0255 0.028" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link1_1_1"/>
+  <axis xyz="0.0 -0.0 -1.0"/>
+</joint>
+
+</robot>
