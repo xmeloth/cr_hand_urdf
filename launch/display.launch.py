@@ -9,9 +9,9 @@ from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
-    share_dir = get_package_share_directory('CR-Hand_URDF')
+    share_dir = get_package_share_directory('cr_hand_urdf')
 
-    xacro_file = os.path.join(share_dir, 'urdf', 'CR-Hand_URDF.xacro')
+    xacro_file = os.path.join(share_dir, 'urdf', 'cr_hand_urdf.xacro')
     robot_description_config = xacro.process_file(xacro_file)
     robot_urdf = robot_description_config.toxml()
 

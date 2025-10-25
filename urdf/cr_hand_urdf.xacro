@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
-<robot name="CR-Hand_URDF" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="cr_hand_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find CR-Hand_URDF)/urdf/materials.xacro" />
-<xacro:include filename="$(find CR-Hand_URDF)/urdf/sensors.xacro" />
-<xacro:include filename="$(find CR-Hand_URDF)/urdf/CR-Hand_URDF.gazebo" />
+<xacro:include filename="$(find cr_hand_urdf)/urdf/materials.xacro" />
+<xacro:include filename="$(find cr_hand_urdf)/urdf/sensors.xacro" />
+<xacro:include filename="$(find cr_hand_urdf)/urdf/cr_hand_urdf.gazebo" />
 <link name="base_link">
   <inertial>
     <origin xyz="0.01258814690707233 -0.0014435974218675726 0.0503918095551357" rpy="0 0 0"/>
@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="-0.0225 -0.0255 -0.143" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link2_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link2_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0225 -0.0255 -0.143" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link2_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link2_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.0225 -0.0255 -0.103" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link2_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link2_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0225 -0.0255 -0.103" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link2_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link2_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.02255 -0.005028 -0.148439" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link3_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link3_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.02255 -0.005028 -0.148439" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link3_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link3_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.02255 -0.006423 -0.108464" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link3_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link3_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.02255 -0.006423 -0.108464" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link3_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link3_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.0225 0.015441 -0.144258" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link4_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link4_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0225 0.015441 -0.144258" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link4_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link4_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,14 +139,14 @@
   <visual>
     <origin xyz="-0.0225 0.012651 -0.104355" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link4_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link4_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0225 0.012651 -0.104355" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link4_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link4_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -160,14 +160,14 @@
   <visual>
     <origin xyz="-0.0225 0.035901 -0.139955" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link5_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link5_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0225 0.035901 -0.139955" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link5_2_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link5_2_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -181,14 +181,14 @@
   <visual>
     <origin xyz="-0.0225 0.031719 -0.100174" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link5_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link5_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0225 0.031719 -0.100174" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link5_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link5_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -202,14 +202,14 @@
   <visual>
     <origin xyz="-0.0225 -0.0545 -0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link1_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link1_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0225 -0.0545 -0.025" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link1_3_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link1_3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -223,14 +223,14 @@
   <visual>
     <origin xyz="-0.0225 -0.0255 -0.028" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link1_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link1_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0225 -0.0255 -0.028" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find CR-Hand_URDF)/meshes/link1_1_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find cr_hand_urdf)/meshes/link1_1_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>

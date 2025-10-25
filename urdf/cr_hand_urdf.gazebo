@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="CR-Hand_URDF" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+<robot name="cr_hand_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
 <xacro:property name="body_color" value="Gazebo/Silver" />
 
@@ -127,7 +127,7 @@
 </ros2_control>
 <gazebo>
 <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
-   <parameters>$(find CR-Hand_URDF)/config/ros2_controller.yaml</parameters>
+   <parameters>$(find cr_hand_urdf)/config/ros2_controller.yaml</parameters>
 </plugin>
 <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
    <render_engine>ogre2</render_engine>

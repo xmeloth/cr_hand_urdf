@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-<name>CR-Hand_URDF</name>
+  <name>cr_hand_urdf</name>
   <version>0.0.0</version>
-<description>The CR-Hand_URDF package</description>
+  <description>The cr_hand_urdf package</description>
   <maintainer email="n.chowchinsung@gmail.com">Nico</maintainer>
   <license>TODO: License declaration</license>
 
@@ -19,12 +19,12 @@
   <test_depend>python3-pytest</test_depend>
 
 
-<depend>ros_gz_bridge</depend>
-                                  <depend>ros_gz_image</depend>
-                                  <depend>ros_gz_sim</depend>
-                                 <depend>joint_state_broadcaster</depend>
-                                  <depend>joint_trajectory_controller</depend>
-                                  <export>
+  <depend>ros_gz_bridge</depend>
+  <depend>ros_gz_image</depend>
+  <depend>ros_gz_sim</depend>
+  <depend>joint_state_broadcaster</depend>
+  <depend>joint_trajectory_controller</depend>
+  <export>
     <build_type>ament_python</build_type>
   </export>
 </package>

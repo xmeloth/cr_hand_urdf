@@ -13,8 +13,8 @@ from launch.event_handlers import OnProcessExit
 
 def generate_launch_description():
 
-    package_name='CR-Hand_URDF'
-    robot_name='CR-Hand_URDF'
+    package_name='cr_hand_urdf'
+    robot_name='cr_hand_urdf'
     share_dir = get_package_share_directory(package_name)
     xacro_file = os.path.join(share_dir, 'urdf', f"{robot_name}.xacro")
 
@@ -97,7 +97,7 @@ def generate_launch_description():
     gz_ros2_bridge = Node(
         package="ros_gz_bridge",
         executable="parameter_bridge",
-        arguments=['/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock', '/world/default/model/CR-Hand_URDF/joint_state@sensor_msgs/msg/JointState[gz.msgs.Model', '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V', '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist'],
+        arguments=['/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock', '/world/default/model/cr_hand_urdf/joint_state@sensor_msgs/msg/JointState[gz.msgs.Model', '/tf@tf2_msgs/msg/TFMessage[gz.msgs.Pose_V', '/cmd_vel@geometry_msgs/msg/Twist@gz.msgs.Twist'],
         remappings=[]
     )
 

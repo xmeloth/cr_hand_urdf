@@ -2,7 +2,7 @@ from setuptools import setup
 import os
 from glob import glob
 
-package_name = 'CR-Hand_URDF'
+package_name = 'cr_hand_urdf'
 
 setup(
     name=package_name,
